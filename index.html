@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Currency Exchange</h1>
+        <div class="exchange-form">
+            <input type="number" id="amount" placeholder="Amount" />
+            <select id="currency-from">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <span>to</span>
+            <select id="currency-to">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <button id="convert">Convert</button>
+        </div>
+        <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
